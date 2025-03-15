@@ -3,7 +3,7 @@ import customfetch from "./Axios";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "./CartSlice";
 import { nanoid } from "@reduxjs/toolkit";
-
+import Form from "./Form"
 const fetchProducts = async () => {
   const { data } = await customfetch.get("/products");
   return data;
@@ -40,6 +40,7 @@ const ProductList = () => {
       {/* Product List */}
       <div className="p-4">
         <h2 className="text-2xl font-bold mb-4">Product List</h2>
+        <Form/>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 shadow-md">
           {data?.map((product) => (
             <div key={product.id} className="p-4 rounded-lg shadow-lg bg-amber-50">
