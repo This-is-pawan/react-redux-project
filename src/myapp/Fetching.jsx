@@ -58,7 +58,7 @@ const ProductList = () => {
                   ${product.price}
                 </span>
                 <button
-                  className="btn btn-primary w-[40%]"
+                  className="btn btn-primary w-[40%] text-xl"
                   onClick={() => dispatch(addToCart({ id: nanoid(), name: product.title, price:product.price,image:product.image }))}
                 >
                   Add to Cart
