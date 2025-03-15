@@ -4,7 +4,7 @@ const Form = () => {
   
   return (
    <>
-   form
+<input type="text" placeholder="search item"/>
    </>
   );
 };
