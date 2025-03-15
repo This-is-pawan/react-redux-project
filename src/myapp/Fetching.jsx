@@ -39,8 +39,10 @@ const ProductList = () => {
 
       {/* Product List */}
       <div className="p-4">
-        <h2 className="text-2xl font-bold mb-4">Product List</h2>
+        <h2 className="text-2xl font-bold mb-4">Product List</h2> 
+        <div className="m-4 grid place-item-center">
         <Form/>
+          <\>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 shadow-md">
           {data?.map((product) => (
             <div key={product.id} className="p-4 rounded-lg shadow-lg bg-amber-50">
