@@ -21,7 +21,7 @@ const cartSlice = createSlice({
       const itemId = action.payload;
       const item = state.cartItems.find((item) => item.id === itemId);
       if (item) {
-        state.price -= item.price;
+        state.price = Math.max(item.price-1);
         state.cartItems = state.cartItems.filter((item) => item.id !== itemId);
       }
     },
