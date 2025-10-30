@@ -20,7 +20,7 @@ const Cart = () => {
   <FaTrash color="black" className="hover:text-amber-200 transform hover:scale-110" onClick={() => dispatch(removeFromCart(item.id))} />
 </div>
               <span className="text-3xl font-bold"> Name: {item.name.slice(0, 20)} </span>
-              <span className="text-xl text-amber-100 block"> Price: ${item.price} </span>
+              <span className="text-xl text-amber-100 block"> Price: ${Math.round(item.price)} </span>
               <img 
                 src={item.image} 
                 alt={item.name} 
